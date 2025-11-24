@@ -1,0 +1,20 @@
+{
+  "thresholds": {
+    "NEXT_dxRight_min": 0.025,
+    "NEXT_absDyRight_max": 0.31,
+    "PREV_dxLeft_min": -0.051,
+    "PREV_absDyLeft_max": 0.334,
+    "SELECT_wristAboveShoulder": -0.334
+  },
+  "metadata": {
+    "dataset_size": 17,
+    "accuracy": 0.4117647058823529,
+    "analysis_date": "2025-11-15",
+    "notes": [
+      "These thresholds are derived from statistical analysis of gesture data",
+      "Manually review and adjust in frontend/src/cv/gestureEngine.ts",
+      "Consider user feedback and real-world testing results",
+      "NEXT/PREV mappings are inverted in gestureEngine.ts (dxRight -> PREV, dxLeft -> NEXT)"
+    ]
+  }
+}

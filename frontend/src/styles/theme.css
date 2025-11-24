@@ -1,0 +1,163 @@
+/* ========================================
+   Design System - CSS Variables
+   ======================================== */
+
+/* Light Theme (Default) */
+:root,
+:root[data-theme="light"] {
+  /* ========================================
+     Colors - Primary & Accent
+     ======================================== */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #6366f1;
+  --color-primary-light: #e0e7ff;
+  --color-primary-dark: #4338ca;
+
+  /* ========================================
+     Colors - Neutral Palette
+     ======================================== */
+  --color-text-primary: #333;
+  --color-text-secondary: #666;
+  --color-text-muted: #999;
+  --color-text-inverse: #fff;
+
+  --color-bg-primary: #f5f5f5;
+  --color-bg-primary-light: #fafafa; /* Lighter variant for gradient */
+  --color-bg-gradient-start: #fafafa; /* Gradient start (light neutral) */
+  --color-bg-gradient-mid: #f0f4ff; /* Gradient mid (soft primary hint) */
+  --color-bg-gradient-end: #f5f5f5; /* Gradient end (light neutral) */
+  --color-bg-surface: #fff;
+  --color-bg-surface-hover: #fafafa;
+
+  --color-border: #e0e0e0;
+  --color-border-light: #f0f0f0;
+  --color-border-dark: #ccc;
+
+  /* ========================================
+     Typography Scale
+     ======================================== */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  --font-size-xs: 0.75rem;      /* 12px - Small meta text */
+  --font-size-sm: 0.875rem;     /* 14px - Small text */
+  --font-size-base: 1rem;       /* 16px - Body text */
+  --font-size-md: 1.125rem;     /* 18px - Medium text */
+  --font-size-lg: 1.25rem;      /* 20px - Section title */
+  --font-size-xl: 1.5rem;       /* 24px - Large section title */
+  --font-size-2xl: 1.75rem;     /* 28px - Page subtitle */
+  --font-size-3xl: 2rem;        /* 32px - Page title */
+  --font-size-4xl: 2.5rem;      /* 40px - Hero title */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  
+  /* Typography - Letter Spacing */
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.01em;
+  --letter-spacing-label: 0.4px; /* For all-caps labels and meta text */
+
+  /* ========================================
+     Spacing Scale
+     ======================================== */
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 0.75rem;    /* 12px */
+  --spacing-base: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-2xl: 2.5rem;    /* 40px */
+  --spacing-3xl: 3rem;      /* 48px */
+
+  /* ========================================
+     Border Radius
+     ======================================== */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     Shadows
+     ======================================== */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-primary: 0 4px 12px rgba(79, 70, 229, 0.4);
+  
+  /* Premium card shadows - layered */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+
+  /* ========================================
+     Transitions
+     ======================================== */
+  --transition-fast: 0.15s ease-out;
+  --transition-base: 0.25s ease-out;
+  --transition-slow: 0.3s ease-out;
+
+  /* ========================================
+     Z-Index Scale
+     ======================================== */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-overlay: 998;
+  --z-modal: 999;
+  --z-onboarding: 1000;
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+  /* ========================================
+     Colors - Primary & Accent (softened for dark)
+     ======================================== */
+  --color-primary: #6366f1; /* Slightly brighter indigo for dark mode */
+  --color-primary-hover: #818cf8;
+  --color-primary-light: #312e81; /* Darker variant for dark mode */
+  --color-primary-dark: #4f46e5;
+
+  /* ========================================
+     Colors - Neutral Palette (inverted for dark)
+     ======================================== */
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #d1d5db;
+  --color-text-muted: #9ca3af;
+  --color-text-inverse: #1f2937;
+
+  --color-bg-primary: #111827; /* Dark background */
+  --color-bg-primary-light: #1f2937; /* Lighter variant for gradient */
+  --color-bg-gradient-start: #1f2937; /* Gradient start (dark neutral) */
+  --color-bg-gradient-mid: #1e1b4b; /* Gradient mid (dark primary hint) */
+  --color-bg-gradient-end: #111827; /* Gradient end (dark neutral) */
+  --color-bg-surface: #1f2937; /* Dark surface */
+  --color-bg-surface-hover: #374151;
+
+  --color-border: #374151;
+  --color-border-light: #4b5563;
+  --color-border-dark: #6b7280;
+
+  /* Shadows are lighter/softer in dark mode */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-primary: 0 4px 12px rgba(99, 102, 241, 0.3);
+  
+  /* Premium card shadows - adapted for dark */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  /* Typography, Spacing, Border Radius, Transitions, Z-Index remain the same */
+}
+

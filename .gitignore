@@ -1,0 +1,41 @@
+# Node / frontend
+node_modules/
+dist/
+.build/
+.vite/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Models (optional, if large)
+models/*.h5
+models/*.keras
+models/*.joblib
+
+# Any venv folders
+.venv/
+.venv*/
+venv/
+env/
+
+# Specific one we had trouble with
+ml/.venv_mediapipe/
+
